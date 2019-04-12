@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     
     <title>RaffyShop</title>
@@ -20,7 +21,6 @@
           height: 0;
           padding: 0;
       }
-
       .card-hover:hover .reveal {
           height: auto;
           visibility: visible;
@@ -54,6 +54,34 @@
     <div class="container">
       <div class="card">
         <div class="card-body">
+
+          <!-- Header -->
+          <div class="row">
+            <div class="col-md mx-auto">
+              <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand font-weight-bold" href="#" style="font-size: 55px;font-family: Comic Sans MS;">clothes</a>
+              </nav>
+            </div>
+            <div class="col-md mx-auto">
+              <form class="form-inline mt-4">
+                <input class="form-control  rounded-0" type="search" placeholder="Search" style="width: 80%;" aria-label="Search">
+                <button class="btn btn-warning my-2 my-sm-0 rounded-0" style="" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class="col-md mx-auto">
+              <div class="dropdown mt-4" style="float: right;">
+                <button class="btn btn-secondary dropdown-toggle rounded-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-shopping-cart"></i> Cart (empty)
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Header -->
 
           <!--
           <ul class="nav nav-fill">
@@ -101,7 +129,7 @@
           </nav>
           -->
 
-          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A6AAAA">
+          <nav class="navbar navbar-expand-lg navbar-light mt-3" style="background-color: #A6AAAA">
             <!--<a class="navbar-brand" href="#">Clothes</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -175,7 +203,7 @@
                     <div class="card-body">
                       <h5 class="card-text" style="color: #927B7C">MEN'S CLOTHING</h5>
                       <p class="card-text" style="color: #F3B211">Get up to 40% off</p>
-                      <button type="button" class="btn btn-secondary rounded-0">SHOP NOW!</button>
+                      <button type="button" class="btn btn-secondary rounded-0" onclick="window.location.href='category/men.html'">SHOP NOW!</button>
                     </div>
                   </div>
                 </div>
@@ -187,7 +215,7 @@
                     <div class="card-body">
                       <h5 class="card-text" style="color: #927B7C">KID'S CLOTHING</h5>
                       <p class="card-text" style="color: #F3B211">Get up to 40% off</p>
-                      <button type="button" class="btn btn-secondary rounded-0">SHOP NOW!</button>
+                      <button type="button" class="btn btn-secondary rounded-0" onclick="window.location.href='category/men.html'">SHOP NOW!</button>
                     </div>
                   </div>
                 </div>
@@ -202,13 +230,13 @@
                     <div class="card-body">
                       <h5 class="card-text" style="color: #927B7C">LINGERIE</h5>
                       <p class="card-text" style="color: #F3B211">Get up to 40% off</p>
-                      <button type="button" class="btn btn-secondary rounded-0">SHOP NOW!</button>
+                      <button type="button" class="btn btn-secondary rounded-0" onclick="window.location.href='category/lingeree.html'">SHOP NOW!</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm mx-auto">
-                <div class="card rounded-0" style="width: 20rem;background-color: red; border-style: none;">
+                <div class="card rounded-0" style="width: 20rem;height: 10.5rem;background-color: red; border-style: none;">
                   <div class="card-body">
                     <p class="card-text">
                       <center>
@@ -226,7 +254,7 @@
                     <div class="card-body">
                       <h5 class="card-text" style="color: #927B7C">NEW ARRIVALS</h5>
                       <h5 class="card-text" style="color: #F3B211">2014</h5>
-                      <button type="button" class="btn btn-secondary rounded-0">SHOP NOW!</button>
+                      <button type="button" class="btn btn-secondary rounded-0" onclick="window.location.href='category/new_arrival.html'">SHOP NOW!</button>
                     </div>
                   </div>
                 </div>
@@ -260,28 +288,27 @@
             <div class="row">
 
               <div class="col-sm mx-auto">
-                <div class="card card-houver rounded-0" style="width: 14rem; margin-top: 10px;">
+                <div class="card card-hover rounded-0" style="width: 14rem; margin-top: 10px;">
                   <img class="card-img-top" src="img/c-1.jpg" alt="Card image cap">
                   <div class="card-body">
                     <!-------------------------------->
                     <div class="card-img-overlay">
-                      <div class="reveal">
-                        <div class="row">
+                        <div class="row mt-10 text-center">
                           <div class="col-md">
-                            <h4 style="font-size: 10px; background-color: #E74C3C; color: white;">Sale</h4>
+                            <h4 class="btn-sale">Sale!</h4>
+                          </div>
+                          <div class="col-md reveal">
+                            <h4 class="btn-hoverable">Quick Overview</h4>
                           </div>
                           <div class="col-md">
-                            <h4 style="font-size: 10px; background-color: #E74C3C; color: white;">Quick Overview</h4>
-                          </div>
-                          <div class="col-md">
-                            <h4 style="font-size: 10px; background-color: #E74C3C; color: white;">New</h4>
+                            <h4 class="btn-new">New</h4>
                           </div>
                         </div>
-                      </div>
                     </div>
                     <!-------------------------------->
                     <p class="card-text">
                       <h6>Lorem ipsum dolor sit amet</h6>
+                      <!--<small class="reveal">Review (1)</small>-->
                       <p style="font-size: 10px;">Fashion has always been so temporary and uncertain. You can't keep up...</p>
                       <!-- Buttons -->
                       <div class="row">
@@ -299,9 +326,22 @@
               </div>
 
               <div class="col-sm mx-auto">
-                <div class="card rounded-0" style="width: 14rem;">
+                <div class="card card-hover rounded-0" style="width: 14rem;">
                   <img class="card-img-top" src="img/c-2.jpg" alt="Card image cap">
                   <div class="card-body">
+                    <div class="card-img-overlay">
+                        <div class="row mt-10 text-center">
+                          <div class="col-md">
+                            <h4 class="btn-sale">Sale!</h4>
+                          </div>
+                          <div class="col-md reveal">
+                            <h4 class="btn-hoverable">Quick Overview</h4>
+                          </div>
+                          <div class="col-md">
+                            <h4 class="btn-new">New</h4>
+                          </div>
+                        </div>
+                    </div>
                     <p class="card-text"><h6>Lorem ipsum dolor sit amet</h6>
                       <p style="font-size: 10px;">Fashion has always been so temporary and uncertain. You can't keep up...</p>
                       <!-- Buttons -->
@@ -310,7 +350,7 @@
                           <button type="button" class="btn btn-outline-warning" style="font-size: 9px; color: #F1C40F; border-color: #D5D8DC;">ADD TO CART</button>
                         </div>
                         <div class="col-md mx-auto">
-                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;">MORE</button>
+                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;" onclick="window.location.href='product_page/product1.html'">MORE</button>
                         </div>
                       </div>
                       <!-- End Buttons -->
@@ -320,9 +360,22 @@
               </div>
 
               <div class="col-sm mx-auto">
-                <div class="card rounded-0" style="width: 14rem;">
+                <div class="card card-hover rounded-0" style="width: 14rem;">
                   <img class="card-img-top" src="img/c-3.jpg" alt="Card image cap">
                   <div class="card-body">
+                    <div class="card-img-overlay">
+                        <div class="row mt-10 text-center">
+                          <div class="col-md">
+                            <h4 class="btn-sale">Sale!</h4>
+                          </div>
+                          <div class="col-md reveal">
+                            <h4 class="btn-hoverable">Quick Overview</h4>
+                          </div>
+                          <div class="col-md">
+                            <h4 class="btn-new">New</h4>
+                          </div>
+                        </div>
+                    </div>
                     <p class="card-text">
                       <h6>Lorem ipsum dolor sit amet</h6>
                       <p style="font-size: 10px;">Fashion has always been so temporary and uncertain. You can't keep up...</p>
@@ -332,7 +385,7 @@
                           <button type="button" class="btn btn-outline-warning" style="font-size: 9px; color: #F1C40F; border-color: #D5D8DC;">ADD TO CART</button>
                         </div>
                         <div class="col-md mx-auto">
-                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;">MORE</button>
+                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;" onclick="window.location.href='product_page/product2.html'">MORE</button>
                         </div>
                       </div>
                       <!-- End Buttons -->
@@ -342,19 +395,32 @@
               </div>
 
               <div class="col-sm mx-auto">
-                <div class="card rounded-0" style="width: 14rem;">
+                <div class="card card-hover rounded-0" style="width: 14rem;">
                   <img class="card-img-top" src="img/c-4.jpg" alt="Card image cap">
                   <div class="card-body">
+                    <div class="card-img-overlay">
+                        <div class="row mt-10 text-center">
+                          <div class="col-md">
+                            <h4 class="btn-sale">Sale!</h4>
+                          </div>
+                          <div class="col-md reveal">
+                            <h4 class="btn-hoverable">Quick Overview</h4>
+                          </div>
+                          <div class="col-md">
+                            <h4 class="btn-new">New</h4>
+                          </div>
+                        </div>
+                    </div>
                     <p class="card-text">
                       <h6>Lorem ipsum dolor sit amet</h6>
                       <p style="font-size: 10px;">Fashion has always been so temporary and uncertain. You can't keep up...</p>
                       <!-- Buttons -->
                       <div class="row">
                         <div class="col-md mx-auto">
-                          <button type="button" class="btn btn-outline-warning" style="font-size: 9px; color: #F1C40F; border-color: #D5D8DC;">ADD TO CART</button>
+                          <button type="button" class="btn btn-outline-warning rounded-0" style="font-size: 9px;">ADD TO CART</button>
                         </div>
                         <div class="col-md mx-auto">
-                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;">MORE</button>
+                          <button type="button" class="btn btn-outline-warning rounded-0" style="color: #ABB2B9; border-color: #D5D8DC;" onclick="window.location.href='product_page/product3.html'">MORE</button>
                         </div>
                       </div>
                       <!-- End Buttons -->
@@ -370,9 +436,22 @@
             <div class="row mt-4">
 
               <div class="col-sm mx-auto">
-                <div class="card rounded-0" style="width: 14rem;">
+                <div class="card card-hover rounded-0" style="width: 14rem;">
                   <img class="card-img-top" src="img/c-5.jpg" alt="Card image cap">
                   <div class="card-body">
+                    <div class="card-img-overlay">
+                        <div class="row mt-10 text-center">
+                          <div class="col-md">
+                            <!--<h4 class="btn-sale">Sale</h4>-->
+                          </div>
+                          <div class="col-md reveal">
+                            <h4 class="btn-hoverable">Quick Overview</h4>
+                          </div>
+                          <div class="col-md">
+                            <h4 class="btn-new">New</h4>
+                          </div>
+                        </div>
+                    </div>
                     <p class="card-text">
                       <h6>Lorem ipsum dolor sit amet</h6>
                       <p style="font-size: 10px;">Fashion has always been so temporary and uncertain. You can't keep up...</p>
@@ -382,7 +461,7 @@
                           <button type="button" class="btn btn-outline-warning" style="font-size: 9px; color: #F1C40F; border-color: #D5D8DC;">ADD TO CART</button>
                         </div>
                         <div class="col-md mx-auto">
-                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;">MORE</button>
+                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;" onclick="window.location.href='product_page/product4.html'">MORE</button>
                         </div>
                       </div>
                       <!-- End Buttons -->
@@ -392,9 +471,22 @@
               </div>
 
               <div class="col-sm mx-auto">
-                <div class="card rounded-0" style="width: 14rem;">
+                <div class="card card-hover rounded-0" style="width: 14rem;">
                   <img class="card-img-top" src="img/c-6.jpg" alt="Card image cap">
                   <div class="card-body">
+                    <div class="card-img-overlay">
+                        <div class="row mt-10 text-center">
+                          <div class="col-md">
+                            <!--<h4 class="btn-sale">Sale</h4>-->
+                          </div>
+                          <div class="col-md reveal">
+                            <h4 class="btn-hoverable">Quick Overview</h4>
+                          </div>
+                          <div class="col-md">
+                            <h4 class="btn-new">New</h4>
+                          </div>
+                        </div>
+                    </div>
                     <p class="card-text"><h6>Lorem ipsum dolor sit amet</h6>
                       <p style="font-size: 10px;">Fashion has always been so temporary and uncertain. You can't keep up...</p>
                       <!-- Buttons -->
@@ -403,7 +495,7 @@
                           <button type="button" class="btn btn-outline-warning" style="font-size: 9px; color: #F1C40F; border-color: #D5D8DC;">ADD TO CART</button>
                         </div>
                         <div class="col-md mx-auto">
-                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;">MORE</button>
+                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;" onclick="window.location.href='product_page/product5.html'">MORE</button>
                         </div>
                       </div>
                       <!-- End Buttons -->
@@ -413,9 +505,22 @@
               </div>
 
               <div class="col-sm mx-auto">
-                <div class="card rounded-0" style="width: 14rem;">
+                <div class="card card-hover rounded-0" style="width: 14rem;">
                   <img class="card-img-top" src="img/c-7.jpg" alt="Card image cap">
                   <div class="card-body">
+                    <div class="card-img-overlay">
+                        <div class="row mt-10 text-center">
+                          <div class="col-md">
+                            <!--<h4 class="btn-sale">Sale</h4>-->
+                          </div>
+                          <div class="col-md reveal">
+                            <h4 class="btn-hoverable">Quick Overview</h4>
+                          </div>
+                          <div class="col-md">
+                            <h4 class="btn-new">New</h4>
+                          </div>
+                        </div>
+                    </div>
                     <p class="card-text">
                       <h6>Lorem ipsum dolor sit amet</h6>
                       <p style="font-size: 10px;">Fashion has always been so temporary and uncertain. You can't keep up...</p>
@@ -426,7 +531,7 @@
                           <button type="button" class="btn btn-outline-warning" style="font-size: 9px; color: #F1C40F; border-color: #D5D8DC;">ADD TO CART</button>
                         </div>
                         <div class="col-md mx-auto">
-                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;">MORE</button>
+                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;" onclick="window.location.href='product_page/product6.html'">MORE</button>
                         </div>
                       </div>
                       <!-- End Buttons -->
@@ -436,9 +541,22 @@
               </div>
 
               <div class="col-sm mx-auto">
-                <div class="card rounded-0" style="width: 14rem;">
+                <div class="card card-hover rounded-0" style="width: 14rem;">
                   <img class="card-img-top" src="img/c-8.jpg" alt="Card image cap">
                   <div class="card-body">
+                    <div class="card-img-overlay">
+                        <div class="row mt-10 text-center">
+                          <div class="col-md">
+                            <h4 class="btn-sale">Sale!</h4>
+                          </div>
+                          <div class="col-md reveal">
+                            <h4 class="btn-hoverable">Quick Overview</h4>
+                          </div>
+                          <div class="col-md">
+                            <h4 class="btn-new">New</h4>
+                          </div>
+                        </div>
+                    </div>
                     <p class="card-text">
                       <h6>Lorem ipsum dolor sit amet</h6>
                       <p style="font-size: 10px;">Fashion has always been so temporary and uncertain. You can't keep up...</p>
@@ -449,7 +567,7 @@
                           <button type="button" class="btn btn-outline-warning" style="font-size: 9px; color: #F1C40F; border-color: #D5D8DC;">ADD TO CART</button>
                         </div>
                         <div class="col-md mx-auto">
-                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;">MORE</button>
+                          <button type="button" class="btn btn-outline-warning" style="color: #ABB2B9; border-color: #D5D8DC;" onclick="window.location.href='product_page/product7.html'">MORE</button>
                         </div>
                       </div>
                       <!-- End Buttons -->
@@ -478,6 +596,12 @@
                 <div class="card rounded-0" style="width: 18rem;">
                   <div class="card-body">
                     <p class="card-text">HOT OFFERS</p>
+                    <p class="card-text" style="font-size: 10px;">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hend.</p>
+                    <p class="card-text" style="font-size: 9px;"><i class="fas fa-play"></i> Vestibulum ante ipsum primis in faucibus orci luctus</p>
+                    <p class="card-text" style="font-size: 9px;"><i class="fas fa-play"></i> Vestibulum ante ipsum primis in faucibus orci luctus</p>
+                    <p class="card-text" style="font-size: 9px;"><i class="fas fa-play"></i> Vestibulum ante ipsum primis in faucibus orci luctus</p>
+                    <p class="card-text" style="font-size: 9px;"><i class="fas fa-play"></i> Vestibulum ante ipsum primis in faucibus orci luctus</p>
+                    <p class="card-text" style="font-size: 9px;"><i class="fas fa-play"></i> Vestibulum ante ipsum primis in faucibus orci luctus</p>
                   </div>
                 </div>
               </div>
@@ -485,6 +609,10 @@
                 <div class="card rounded-0" style="width: 18rem;">
                   <div class="card-body">
                     <p class="card-text">STORE INFORMATION</p>
+                    <p class="card-text" style="font-size: 9px;"><i class="fas fa-map-marker"></i> Company Inc., 8901 Marmora Road, Glasgow, D04 89GR</p>
+                    <p class="card-text" style="font-size: 9px;"><i class="fas fa-phone"></i> Call us now toll free: (800) 2345-6789</p>
+                    <p class="card-text" style="font-size: 9px;"><i class="fas fa-envelope"></i> Customer support: support@example.com Press: pressroom@example.com</p>
+                    <p class="card-text" style="font-size: 11px;"><i class="fab fa-skype"></i> Skype: sample-username</p>
                   </div>
                 </div>
               </div>
