@@ -1,0 +1,122 @@
+nav.bg-dark-light {
+	background-color: #F2F3F4;
+}
+
+a.br-head {
+	font-size: 13px !important;
+	margin-left: 130px;
+}
+
+a.itm-1 {
+	font-size: 13px !important;
+	color: grey;
+	margin-left: 600px;
+}
+
+a.itm-2 {
+	font-size: 13px !important;
+	color: grey;
+	margin-left: -16px;
+}
+
+img.logo {
+	margin-left: 130px;
+}
+
+.text-grey {
+	color: grey;
+}
+
+.text-black {
+	color: black;
+}
+
+.nav-center {
+	/*margin-right: 300px;*/
+}
+
+.m-p {
+	margin-right: 60px;
+}
+
+.ml-6 {
+	margin-left: 90px;
+}
+
+.bg-light-dark {
+	background-color: #F8F9F9;
+}
+
+.bg-purple {
+	background-color: #270FF9;
+}
+
+.f-avel {
+	font-family: 'Abel';
+}
+
+.ico-1 {
+	color: grey;font-size: 25px;
+}
+
+/* Carousel indicators */
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: left;
+}
+
+/* Card Margin Left */
+.card-margin-left-4 {
+	margin-left: 60px;
+	height: 120px;
+	width: 120px;
+}
+
+.ico-size-1 {
+	font-size: 50px;
+	margin-left: 10.5px;
+	margin-top: 10px;
+	color: grey;
+}
+
+.text-5 {
+	font-size: 15px;
+}
+
+.text-6 {
+	font-size: 13px;
+}
+
+#label-1-1 {
+	margin-left: 35px;
+}
+
+#label-1-2 {
+	margin-left: 30px;
+}
+
+#label-2-1 {
+	margin-left: 25px;
+}
+
+#label-2-2 {
+	margin-left: 30px;
+}
+
+#label-3-1 {
+	margin-left: 20px;
+}
+
+#label-3-2 {
+	margin-left: 50px;
+}
+
+a#read-more {
+	color: grey;
+}
+
+a#read-more:hover {
+	color: black;
+}
