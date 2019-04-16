@@ -99,6 +99,7 @@ img.logo {
 	width: 120px;
 }
 
+/* Icon size */
 .ico-size-1 {
 	font-size: 50px;
 	margin-left: 10.5px;
@@ -106,14 +107,17 @@ img.logo {
 	color: grey;
 }
 
+/* font size */
 .text-5 {
 	font-size: 15px;
 }
 
+/* font size */
 .text-6 {
 	font-size: 13px;
 }
 
+/* label */
 #label-1-1 {
 	margin-left: 35px;
 }
@@ -138,10 +142,11 @@ img.logo {
 	margin-left: 50px;
 }
 
+/* Read more */
 a#read-more {
 	color: grey;
 }
-
+/* Read more hover */
 a#read-more:hover {
 	color: black;
 }
