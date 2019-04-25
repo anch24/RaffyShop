@@ -71,23 +71,56 @@
 
 	<!-- Navs -->
 	<nav class="navbar navbar-primary bg-primary p-2 justify-content-center">
-		<a class="navbar-brand text-white" href="#" style="width: 260px;background-color: black;">
-			<i class="fas fa-bars ml-2"></i>  TOP CATEGORIES
-		</a>
-		<form class="form-inline">
-			<input class="form-control rounded-left" type="search" placeholder="Search" aria-label="Search">
-			<div class="input-group-append">
-		    	<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-		    	<div class="dropdown-menu">
-		    		<a class="dropdown-item" href="#">Action</a>
-		    		<a class="dropdown-item" href="#">Another action</a>
-		    		<a class="dropdown-item" href="#">Something else here</a>
-		    		<div role="separator" class="dropdown-divider"></div>
-		    		<a class="dropdown-item" href="#">Separated link</a>
-		    	</div>
+		<div class="dropdown mr-3">
+			<button class="btn btn-secondary rounded-0 text-left" type="button" id="dropdownMenuButtonTopCag" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	<i class="fas fa-bars"></i> TOP CATEGORIES
+			</button>
+			<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButtonTopCag">
+				<a class="dropdown-item" href="#">FASHION</a>
+		    	<a class="dropdown-item" href="#">ELECTRONICS</a>
+		    	<a class="dropdown-item" href="#">BAGS</a>
+		    	<a class="dropdown-item" href="#">MOBILES</a>
+		    	<a class="dropdown-item" href="#">SAREES</a>
+		    	<a class="dropdown-item" href="#">TELEVISION</a>
+		    	<a class="dropdown-item" href="#">SUNGLASSES</a>
+		    	<a class="dropdown-item" href="#">WATCHES</a>
 			</div>
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</div>
+		<form class="form-inline">
+			<input id="search-navbar" class="form-control rounded-pill-left" type="search" placeholder="Search products .." aria-label="Search">
+			<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle rounded-0" type="button" id="dropdownMenuButtonCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				All Categories
+  				</button>
+  				<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButton" id="menuButtonCategories">
+    				<a class="dropdown-item" href="#">Uncategorized</a>
+    				<a class="dropdown-item" href="#">Accesories</a>
+    				<a class="dropdown-item" href="#">Bags</a>
+    				<a class="dropdown-item" href="#">Belts</a>
+    				<a class="dropdown-item" href="#">Clothing</a>
+    				<a class="dropdown-item" href="#">Dresses</a>
+    				<a class="dropdown-item" href="#">Electronics</a>
+    				<a class="dropdown-item" href="#">Fashion</a>
+    				<a class="dropdown-item" href="#">Favors</a>
+    				<a class="dropdown-item" href="#">Fitness Equipment</a>
+    				<a class="dropdown-item" href="#">Jewelry</a>
+    				<a class="dropdown-item" href="#">Mobile</a>
+    				<a class="dropdown-item" href="#">Outfits</a>
+    				<a class="dropdown-item" href="#">Sarees</a>
+    				<a class="dropdown-item" href="#">Shoes</a>
+    				<a class="dropdown-item" href="#">Sunglasses</a>
+    				<a class="dropdown-item" href="#">Televesion</a>
+    				<a class="dropdown-item" href="#">Wallet</a>
+    				<a class="dropdown-item" href="#">Watches</a>
+  				</div>
+			</div>
+			<button class="btn btn-dark my-2 my-sm-0 rounded-pill-right" type="submit">
+				<i class="fas fa-search" style="font-size: 16px;"></i>
+			</button>
 		</form>
+		<span id="text-nav" class="navbar-text f-avel ml-3 text-center">
+    		10% on card & Upto 15% cashup
+  		</span>
 	</nav>
 	<!-- End Navs -->
 
@@ -357,104 +390,69 @@
 	</div>
 
 	<!-- Navbar down -->
-	<nav class="navbar navbar-primary bg-primary mt-5">
-		<span class="navbar-text text-white f-avel" style="margin-left: 10rem;font-size: 30px;">
-			Subscribe to our news letter
+	<nav class="navbar navbar-primary bg-primary mt-5 justify-content-center">
+		<span class="navbar-text text-white f-avel ml-5" id="text-footer">
+			SUBSCRIBE TO OUR NEWS LETTER
 		</span>
-		<form class="form-inline mt-4">
-        	<input class="form-control  rounded-0" type="search" placeholder="Subscribe" style="width: 80%;margin-right: 10rem;" aria-label="Subscribe">
-        	<button class="btn my-2 btn-dark my-sm-0 rounded-0 f-avel text-white" type="submit">
-        		Subscribe!
-        	</button>
-     	</form>
+		<form class="form-inline ml-5">
+    		<input id="subscribe-form" class="form-control rounded-pill-left" type="text" placeholder="Email">
+    		<button id="subscribe-btn" class="btn btn-dark my-2 my-sm-0 rounded-pill-right" type="submit">Subscribe!</button>
+  		</form>
+     	<!-- -->
 	</nav>
 	<!-- End Navbar down -->
 
 	<!-- Footer -->
-	<div class="container-fluid bg-dark">
-		<div class="row ml-6">
+	<div class="container-fluid bg-dark">	
+	<div class="container bg-dark">
+		<div class="row">
 			<div class="col-md mt-5">
 				<img src="img/footer-logo-1-1.png">
 				<p class="f-avel text-light mt-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
 			</div>
-			<div class="col-md mt-5 ml-3">
-				<p>
-					<a href="#" class="text-white f-avel" style="font-size: 20px;">Categories</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Outfits</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Sunglasses</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Watches</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Bags</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Belts</a>
-				</p>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">CATEGORIES</a>
+					<a class="nav-link mt-n1" href="#">Outfits</a>
+					<a class="nav-link mt-n1" href="#">Sunglasses</a>
+					<a class="nav-link mt-n1" href="#">Watches</a>
+					<a class="nav-link mt-n1" href="#">Bags</a>
+					<a class="nav-link mt-n1" href="#">Belts</a>
+				</nav>
 			</div>
-			<div class="col-md mt-5 mr-5">
-				<p>
-					<a href="#" class="text-white f-avel" style="font-size: 20px;">Information</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">About Us</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Contact Us</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Sitemap</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">FAQ Page</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Comming Soon</a>
-				</p>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">INFORMATION</a>
+					<a class="nav-link mt-n1" href="#">About Us</a>
+					<a class="nav-link mt-n1" href="#">Contact Us</a>
+					<a class="nav-link mt-n1" href="#">Sitemap</a>
+					<a class="nav-link mt-n1" href="#">FAQ Page</a>
+					<a class="nav-link mt-n1" href="#">Comming Soon</a>
+				</nav>
 			</div>
-			<div class="col-md mt-5 mr-5">
-				<p>
-					<a href="#" class="text-white f-avel" style="font-size: 20px;">My Account</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Orders</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Download</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Addresses</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Account Details</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Logout</a>
-				</p>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">MY ACCOUNT</a>
+					<a class="nav-link mt-n1" href="#">Orders</a>
+					<a class="nav-link mt-n1" href="#">Download</a>
+					<a class="nav-link mt-n1" href="#">Addresses</a>
+					<a class="nav-link mt-n1" href="#">Account Details</a>
+					<a class="nav-link mt-n1" href="#">Logout</a>
+				</nav>
 			</div>
-			<div class="col-md mt-5 mr-5">
-				<p>
-					<a href="#" class="text-white f-avel" style="font-size: 20px;">Store Information</a>
-				</p>
-				<p>
-					<a href class="text-white f-avel"><i class="fas fa-map-marker"></i> B-14 Collins Street West Victoria 2386</a>
-				</p>
-				<p>
-					<a href class="text-white f-avel"><i class="fas fa-mobile-alt"></i> 0123456789</a>
-				</p>
-				<p>
-					<a href class="text-white f-avel"><i class="far fa-envelope"></i> Contact@yourcompany.com</a>
-				</p>
-				<p class="text-white">
-					<i class="fab fa-facebook-f"></i>  <i class="fab fa-twitter"></i>  <i class="fab fa-google-plus-g"></i>  <i class="fab fa-youtube"></i>  <i class="fab fa-instagram"></i>
-				</p>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">STORE INFORMATION</a>
+					<a class="nav-link mt-n1" href="#"><i class="fas fa-map-marker"></i> B-14 Collins Street West Victoria 2386</a>
+					<a class="nav-link mt-n1" href="#"><i class="fas fa-mobile-alt"></i> 0123456789</a>
+					<a class="nav-link mt-n1" href="#"><i class="far fa-envelope"></i> Contact@yourcompany.com</a>
+					<a class="nav-link mt-n1" href="#">
+						<i class="fab fa-facebook-f"></i>  <i class="fab fa-twitter"></i>  <i class="fab fa-google-plus-g"></i>  <i class="fab fa-youtube"></i>  <i class="fab fa-instagram"></i>
+					</a>
+				</nav>
 			</div>
 		</div>
+	</div>
 	</div>
 	<!-- End footer -->
 

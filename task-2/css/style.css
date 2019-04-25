@@ -121,6 +121,10 @@ img.logo {
 	font-size: 13px;
 }
 
+.text-7 {
+	font-size: 18px;
+}
+
 /* label */
 #label-1-1 {
 	margin-left: 35px;
@@ -197,8 +201,33 @@ a#read-more:hover {
 	width: 20rem;height: 2.2rem;
 }
 
-.navbar .navbar-text {
+.navbar #text-nav{
 	background-color: #0E5AA5;
 	color: white;
 	width: 18rem;
+}
+
+#text-footer {
+	margin-left: 10rem;
+	font-size: 30px;
+}
+#subscribe-form {
+	box-shadow: none;
+	width: 30rem;
+	height: 2.5rem;
+	border: none !important;
+}
+#subscribe-btn {
+	box-shadow: none;
+	border: none !important;
+	width: 10rem;
+	height: 2.5rem;
+}
+
+#nav-f a {
+	color: white;
+	font-family: 'Abel';
+}
+#nav-f a:hover {
+	color: blue;
 }

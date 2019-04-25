@@ -123,7 +123,7 @@
 				<i class="fas fa-search" style="font-size: 16px;"></i>
 			</button>
 		</form>
-		<span class="navbar-text f-avel ml-3 text-center">
+		<span id="text-nav" class="navbar-text f-avel ml-3 text-center">
     		10% on card & Upto 15% cashup
   		</span>
 	</nav>
@@ -151,6 +151,7 @@
 	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 	    <span class="sr-only">Next</span>
 	  </a>
+
 	</div>
 	<!-- End Carousel -->
 
@@ -200,6 +201,7 @@
 			<hr>
 		</div>
 	</div>
+
 	<!-- Dont know how to create one -->
 
 	<!-- Navlinks -->
@@ -587,104 +589,69 @@
 	<!-- End News -->
 
 	<!-- Navbar down -->
-	<nav class="navbar navbar-primary bg-primary mt-5">
-		<span class="navbar-text text-white f-avel" style="margin-left: 10rem;font-size: 30px;">
-			Subscribe to our news letter
+	<nav class="navbar navbar-primary bg-primary mt-5 justify-content-center">
+		<span class="navbar-text text-white f-avel ml-5" id="text-footer">
+			SUBSCRIBE TO OUR NEWS LETTER
 		</span>
-		<form class="form-inline mt-4">
-        	<input class="form-control  rounded-0" type="search" placeholder="Subscribe" style="width: 80%;margin-right: 10rem;" aria-label="Subscribe">
-        	<button class="btn my-2 btn-dark my-sm-0 rounded-0 f-avel text-white" type="submit">Subscribe!
-        	</button>
-     	</form>
+		<form class="form-inline ml-5">
+    		<input id="subscribe-form" class="form-control rounded-pill-left" type="text" placeholder="Email">
+    		<button id="subscribe-btn" class="btn btn-dark my-2 my-sm-0 rounded-pill-right" type="submit">Subscribe!</button>
+  		</form>
      	<!-- -->
 	</nav>
 	<!-- End Navbar down -->
 
 	<!-- Footer -->
-	<div class="container-fluid bg-dark">
-		<div class="row ml-6">
+	<div class="container-fluid bg-dark">	
+	<div class="container bg-dark">
+		<div class="row">
 			<div class="col-md mt-5">
 				<img src="img/footer-logo-1-1.png">
 				<p class="f-avel text-light mt-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
 			</div>
-			<div class="col-md mt-5 ml-3">
-				<p>
-					<a href="#" class="text-white f-avel" style="font-size: 20px;">Categories</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Outfits</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Sunglasses</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Watches</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Bags</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Belts</a>
-				</p>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">CATEGORIES</a>
+					<a class="nav-link mt-n1" href="#">Outfits</a>
+					<a class="nav-link mt-n1" href="#">Sunglasses</a>
+					<a class="nav-link mt-n1" href="#">Watches</a>
+					<a class="nav-link mt-n1" href="#">Bags</a>
+					<a class="nav-link mt-n1" href="#">Belts</a>
+				</nav>
 			</div>
-			<div class="col-md mt-5 mr-5">
-				<p>
-					<a href="#" class="text-white f-avel" style="font-size: 20px;">Information</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">About Us</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Contact Us</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Sitemap</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">FAQ Page</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Comming Soon</a>
-				</p>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">INFORMATION</a>
+					<a class="nav-link mt-n1" href="#">About Us</a>
+					<a class="nav-link mt-n1" href="#">Contact Us</a>
+					<a class="nav-link mt-n1" href="#">Sitemap</a>
+					<a class="nav-link mt-n1" href="#">FAQ Page</a>
+					<a class="nav-link mt-n1" href="#">Comming Soon</a>
+				</nav>
 			</div>
-			<div class="col-md mt-5 mr-5">
-				<p>
-					<a href="#" class="text-white f-avel" style="font-size: 20px;">My Account</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Orders</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Download</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Addresses</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Account Details</a>
-				</p>
-				<p>
-					<a href="#" class="text-white f-avel">Logout</a>
-				</p>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">MY ACCOUNT</a>
+					<a class="nav-link mt-n1" href="#">Orders</a>
+					<a class="nav-link mt-n1" href="#">Download</a>
+					<a class="nav-link mt-n1" href="#">Addresses</a>
+					<a class="nav-link mt-n1" href="#">Account Details</a>
+					<a class="nav-link mt-n1" href="#">Logout</a>
+				</nav>
 			</div>
-			<div class="col-md mt-5 mr-5">
-				<p>
-					<a href="#" class="text-white f-avel" style="font-size: 20px;">Store Information</a>
-				</p>
-				<p>
-					<a href class="text-white f-avel"><i class="fas fa-map-marker"></i> B-14 Collins Street West Victoria 2386</a>
-				</p>
-				<p>
-					<a href class="text-white f-avel"><i class="fas fa-mobile-alt"></i> 0123456789</a>
-				</p>
-				<p>
-					<a href class="text-white f-avel"><i class="far fa-envelope"></i> Contact@yourcompany.com</a>
-				</p>
-				<p class="text-white">
-					<i class="fab fa-facebook-f"></i>  <i class="fab fa-twitter"></i>  <i class="fab fa-google-plus-g"></i>  <i class="fab fa-youtube"></i>  <i class="fab fa-instagram"></i>
-				</p>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">STORE INFORMATION</a>
+					<a class="nav-link mt-n1" href="#"><i class="fas fa-map-marker"></i> B-14 Collins Street West Victoria 2386</a>
+					<a class="nav-link mt-n1" href="#"><i class="fas fa-mobile-alt"></i> 0123456789</a>
+					<a class="nav-link mt-n1" href="#"><i class="far fa-envelope"></i> Contact@yourcompany.com</a>
+					<a class="nav-link mt-n1" href="#">
+						<i class="fab fa-facebook-f"></i>  <i class="fab fa-twitter"></i>  <i class="fab fa-google-plus-g"></i>  <i class="fab fa-youtube"></i>  <i class="fab fa-instagram"></i>
+					</a>
+				</nav>
 			</div>
 		</div>
+	</div>
 	</div>
 	<!-- End footer -->
 
@@ -769,9 +736,7 @@
   				});
 				return this;
 			};
-
 			
-
 		});
     </script>
 
