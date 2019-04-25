@@ -163,3 +163,42 @@ a#read-more:hover {
 .a-2 {
 	margin-left: -10px;
 }
+
+/* Rounded pill classes for horizontal sides */
+.rounded-pill-left {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+.rounded-pill-right {
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+/* Dropdown Menu */
+.dropdown .dropdown-menu #menuButtonCategories {
+	border: .1px solid orange;
+}
+.dropdown .btn {
+	background-color: white;
+	color: #808B96;
+	box-shadow: none;
+}
+.dropdown #dropdownMenuButtonTopCag {
+	background-color: black;
+	box-shadow: none;
+	color: white;
+	border: none !important;
+	width: 18rem;
+}
+
+/* Search bar in navagation */
+.form-inline #search-navbar {
+	border: .1px solid white;
+	width: 20rem;height: 2.2rem;
+}
+
+.navbar .navbar-text {
+	background-color: #0E5AA5;
+	color: white;
+	width: 18rem;
+}
