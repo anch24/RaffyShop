@@ -230,14 +230,18 @@
 				<div class="card card-hover" id="item-1">
 					<img class="card-img-top" src="img/15-7-1-300x300.jpg" alt="Card Image cap">
 					<div class="card-body">
-						<div class="reveal" style="font-size: 10px;">
-							<center>
-								<span class="fa fa-star checked" style="color: orange;"></span>
-								<span class="fa fa-star checked" style="color: orange;"></span>
-								<span class="fa fa-star checked" style="color: orange;"></span>
-								<span class="fa fa-star checked" style="color: orange;"></span>
-								<span class="fa fa-star"></span>
-							</center>
+						<div id="rating-card" class="card-text text-center" style="font-size: 10px;">
+							<span class="fa fa-star checked" style="color: orange;"></span>
+							<span class="fa fa-star checked" style="color: orange;"></span>
+							<span class="fa fa-star checked" style="color: orange;"></span>
+							<span class="fa fa-star checked" style="color: orange;"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<div class="card-title f-avel text-center">
+							Maecenas Ullamcorper
+						</div>
+						<div class="card-text f-avel text-center" id="cd-t">
+							<b>$300.00</b>
 						</div>
 					</div>
 				</div>
@@ -246,7 +250,12 @@
 				<div class="card" id="item-2">
 					<img class="card-img-top" src="img/18-6-1-300x300.jpg" alt="Card Image cap">
 					<div class="card-body">
-						
+						<div class="card-title f-avel text-center">
+							Maecenas Ullamcorper
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$60.00</b>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -254,7 +263,12 @@
 				<div class="card" id="item-3">
 					<img class="card-img-top" src="img/20-6-1-300x300.jpg" alt="Card Image cap">
 					<div class="card-body">
-
+						<div class="card-title f-avel text-center">
+							Primis consequat neque
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$130.00</b>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -262,7 +276,12 @@
 				<div class="card" id="item-4">
 					<img class="card-img-top" src="img/22-4-1-300x300.jpg" alt="Card Image cap">
 					<div class="card-body">
-
+						<div class="card-title f-avel text-center">
+							Facilit Conobia
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$35.00</b>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -664,6 +683,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -673,16 +693,19 @@
     		//hides the carousel controls
 			$(".carousel-control-prev").hide();
 			$(".carousel-control-next").hide();
+			//hides the rating cards
+			$("#rating-card").hide();
 
 			//Toggles the carousel indicators
 			$("#carouselExampleIndicators").hover(function(){
     			$('.carousel-control-prev').toggle('slide');
     			$('.carousel-control-next').show('slide', {direction: 'right'}, 1400);
   			},
-  			function(){
-		    	$('.carousel-control-prev').hide('slide', {direction: 'left'}, 1400);
-		    	$('.carousel-control-next').hide('slide', {direction: 'right'}, 1400);
-  			});
+	  			function(){
+			    	$('.carousel-control-prev').hide('slide', {direction: 'left'}, 1400);
+			    	$('.carousel-control-next').hide('slide', {direction: 'right'}, 1400);
+	  			}
+  			);
 
 			// NOt working code
   			$(".carousel-control-prev").hover(function(){
@@ -716,6 +739,17 @@
   				}
   			);
   			//End Icons Hover
+
+  			//Card hover effects
+  			$("#item-1").hover(function(){
+  				$("#rating-card").show();
+  				$("#cd-t").html("<div class='card-text f-avel text-center' id='cd-t'><i class='fab fa-opencart'></i> <i class='fas fa-eye'></i> <i class='fas fa-link'></i> <i class='fas fa-chart-pie'></i></div>")
+  			},
+  				function(){
+  					$("#rating-card").hide();
+  					$("#cd-t").html("<div class='card-text f-avel text-center' id='cd-t'><b>$300.00</b></div>");
+  				}
+  			);
 
   			//Dropdown menu button
   			$("#dropdownMenuButtonCategories").click(function(){
