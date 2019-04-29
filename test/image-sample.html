@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jquery rotate image animation example - ItSolutionStuff.com</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<img src="https://itsolutionstuff.com/frontTheme/images/logo.png">
+<button>Rotate image</button>
+    
+<script type="text/javascript">
+  var tmpAnimation = 0;
+  $("button").click(function(){
+    var element = $("img");
+    tmpAnimation = tmpAnimation + 90;
+    
+    $({degrees: tmpAnimation - 90}).animate({degrees: tmpAnimation}, {
+        duration: 2000,
+        step: function(now) {
+            element.css({
+                transform: 'rotate(' + now + 'deg)'
+            });
+        }
+    });
+  });
+</script>
+    
+</body>
+</html>

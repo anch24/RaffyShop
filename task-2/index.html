@@ -43,16 +43,6 @@
 			<li class="nav-item">
 			   <a class="nav-link text-grey" href="#">PAGES</a>
 			</li>
-			<!--<li class="nav-item dropdown">
-	        	<a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown link
-	        	</a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
-		          <a class="dropdown-item" href="#">Something else here</a>
-		        </div>
-	      </li>-->
 		</ul>
 
 		<ul class="nav m-p">
@@ -243,6 +233,14 @@
 						<div class="card-text f-avel text-center" id="cd-t">
 							<b>$300.00</b>
 						</div>
+						<!-- Hide -->
+						<div class='card-text f-avel text-center' id='action'>
+							<i class='fab fa-opencart'></i>
+							<i class='fas fa-eye'></i>
+							<i class='fas fa-link'></i>
+							<i class='fas fa-chart-pie'></i>
+						</div>
+						<!-- -->
 					</div>
 				</div>
 			</div>
@@ -695,6 +693,7 @@
 			$(".carousel-control-next").hide();
 			//hides the rating cards
 			$("#rating-card").hide();
+			$("#action").hide();
 
 			//Toggles the carousel indicators
 			$("#carouselExampleIndicators").hover(function(){
@@ -707,7 +706,7 @@
 	  			}
   			);
 
-			// NOt working code
+			// Not working code
   			$(".carousel-control-prev").hover(function(){
   				$(".carousel-control-prev").css("backgound-color","#270FF9");
   			},
@@ -743,11 +742,13 @@
   			//Card hover effects
   			$("#item-1").hover(function(){
   				$("#rating-card").show();
-  				$("#cd-t").html("<div class='card-text f-avel text-center' id='cd-t'><i class='fab fa-opencart'></i> <i class='fas fa-eye'></i> <i class='fas fa-link'></i> <i class='fas fa-chart-pie'></i></div>")
+  				$("#action").show();
+  				$("#cd-t").hide();
   			},
   				function(){
   					$("#rating-card").hide();
-  					$("#cd-t").html("<div class='card-text f-avel text-center' id='cd-t'><b>$300.00</b></div>");
+  					$("#action").hide();
+  					$("#cd-t").show();
   				}
   			);
 
@@ -761,8 +762,8 @@
 
   			jQuery.fn.shake = function(intShakes, intDistance, intDuration) {
     			this.each(function() {
-        		$(this).css("position","relative"); 
-	        		for (var x=1; x<=intShakes; x++) {
+        		$(this).css("position", "relative"); 
+	        		for (var x = 1; x <= intShakes; x++) {
 	        			$(this).animate({left:(intDistance*-1)}, (((intDuration/intShakes)/4)))
 	    				.animate({left:intDistance}, ((intDuration/intShakes)/2))
 	    				.animate({left:0}, (((intDuration/intShakes)/4)));

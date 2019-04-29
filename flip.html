@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<div class="flip"> 
+    <div class="front"> 
+        <img src="/path/to/image.jpg" alt="" />
+    </div> 
+    <div class="back">
+        <h3>Some Text in the Back!</h3>
+    </div> 
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="flip.js"></script>
+	<script>
+		$(function(){
+    		$(".flip").flip({
+        		trigger: 'hover'
+    		});
+		});
+	</script>
+</div>
+</body>
+</html>
