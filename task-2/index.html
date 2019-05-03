@@ -218,7 +218,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md">
-				<div class="card card-hover" id="item-1">
+				<div class="card rounded-0" id="item-1">
+					<div class="borde rounded-0 bg-dark p-1 text-white f-avel" style="width:40%;">
+						FEATURED
+						<i class="fas fa-thumbtack ml-2"></i>
+					</div>
 					<img class="card-img-top" src="img/15-7-1-300x300.jpg" alt="Card Image cap">
 					<div class="card-body">
 						<div id="rating-card" class="card-text text-center" style="font-size: 10px;">
@@ -235,8 +239,8 @@
 							<b>$300.00</b>
 						</div>
 						<!-- Hide -->
-						<div class='card-text f-avel text-center' id='action'>
-							<i id="ico-cart" class='fab fa-opencart border p-1' style="background-color: #EAECEE;"></i>
+						<div class='card-text f-avel text-center text-white' id='action'>
+							<i id="ico-cart" class='fab fa-opencart border p-1' style="background-color: #080505"></i>
 							<i id="ico-view" class='fas fa-eye border p-1' style="background-color: #EAECEE;"></i>
 							<i id="ico-heart" class='far fa-heart border p-1' style="background-color: #EAECEE;"></i>
 							<i id="ico-compare" class='fas fa-chart-pie border p-1' style="background-color: #EAECEE;"></i>
@@ -392,7 +396,7 @@
 	</div>
 	<!-- End Items -->
 
-	<!-- Items -1 -->
+	<!-- Items - 1 -->
 	<div class="container mt-5">
 		<div class="row">
 			<div class="col-md">
@@ -884,7 +888,9 @@
 			});
 
 			// Prevents the carousel from cycling
-			$("#carouselExampleControls").carousel('pause');
+			$(".carousel").carousel('pause');
+
+
 		});
     </script>
 
